@@ -7,7 +7,7 @@ public class Main {
         //instancia coche
         Coche Ferrari= new Coche();
         Ferrari.getPuertas();
-        Ferrari.quitar_puertas(3);
+        Ferrari.set_puertas(3);
         Ferrari.getPuertas();
 
 
@@ -31,9 +31,9 @@ class Coche{
         System.out.println("El coche tiene "+puertas+" puertas");
     }
 
-    public int quitar_puertas(int puertas_menos){
+    public int set_puertas(int puertas_menos){
         System.out.println("se le quita "+puertas_menos+" puertas");
-        puertas-=puertas_menos;
+        puertas+=puertas_menos;
 
         return puertas;
     }
